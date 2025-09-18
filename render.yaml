@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: commandrot-com
+    env: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: out
+    pullRequestPreviewsEnabled: true
+
