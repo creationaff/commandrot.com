@@ -24,8 +24,9 @@ export default function Home() {
             <p className="mt-2 text-zinc-300">Electron desktop app. Local TTS. Whisper STT. Diff previews.</p>
           </div>
         </section>
-        <section className="mt-16">
-          <a href="https://github.com/creationaff/commandrot.com" className="inline-block rounded bg-white px-4 py-2 font-medium text-black hover:bg-zinc-200">GitHub</a>
+        <section className="mt-16 flex gap-3">
+          <a href="commandrot://open" className="inline-block rounded bg-white px-4 py-2 font-medium text-black hover:bg-zinc-200">Open Commandrot</a>
+          <a href="https://github.com/creationaff/commandrot.com" className="inline-block rounded bg-zinc-800 px-4 py-2 font-medium text-white hover:bg-zinc-700">GitHub</a>
         </section>
       </div>
     </main>
