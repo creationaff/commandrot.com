@@ -21,5 +21,5 @@ RUN npm i -g serve@14.2.1
 ENV PORT=3000
 EXPOSE 3000
 
-# Serve the prebuilt static site from out/
-CMD ["serve","-s","out","-l","$PORT"]
+# Serve the prebuilt static site from out/ (expand $PORT via shell)
+CMD ["sh","-c","serve -s out -l $PORT"]
