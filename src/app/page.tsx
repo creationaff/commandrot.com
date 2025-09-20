@@ -28,6 +28,9 @@ export default function Home() {
           <a href="commandrot://open" className="inline-block rounded bg-white px-4 py-2 font-medium text-black hover:bg-zinc-200">Open Commandrot</a>
           <a href="https://github.com/creationaff/commandrot.com" className="inline-block rounded bg-zinc-800 px-4 py-2 font-medium text-white hover:bg-zinc-700">GitHub</a>
         </section>
+        <footer className="mt-8 text-center text-xs text-zinc-500">
+          v0.1.1
+        </footer>
       </div>
     </main>
   );
