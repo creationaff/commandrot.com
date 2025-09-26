@@ -16,12 +16,16 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-20">
         <header className="mb-16">
-          <div className="text-4xl font-bold">Commandrot</div>
-          <p className="mt-3 text-zinc-300">Talk to your Mac. Approve actions. Get it done.</p>
+          <div className="text-5xl font-extrabold tracking-tight">Commandrot</div>
+          <p className="mt-4 text-zinc-300 text-lg max-w-2xl">Your agent for your computer. Speak or type. It plans, previews, and executes — only when you approve.</p>
+          <div className="mt-8 flex gap-3">
+            <button onClick={handleOpenApp} className="rounded bg-white px-5 py-3 font-medium text-black hover:bg-zinc-200">Open Commandrot</button>
+            <a href="https://github.com/creationaff/commandrot.com" className="rounded border border-zinc-700 px-5 py-3 font-medium hover:bg-zinc-900">GitHub</a>
+          </div>
         </header>
-        <section className="grid gap-8 md:grid-cols-2">
+        <section className="grid gap-6 md:grid-cols-4">
           <div className="rounded-lg border border-zinc-800 p-6">
             <h2 className="text-xl font-semibold">Voice + Text agent</h2>
             <p className="mt-2 text-zinc-300">Say it or type it. Commandrot plans, previews, and executes with your approval.</p>
@@ -39,11 +43,25 @@ export default function Home() {
             <p className="mt-2 text-zinc-300">Electron desktop app. Local TTS. Whisper STT. Diff previews.</p>
           </div>
         </section>
+        <section className="mt-16 grid gap-6 md:grid-cols-3">
+          <div className="rounded-lg border border-zinc-800 p-6">
+            <h3 className="font-semibold">1. Ask naturally</h3>
+            <p className="mt-2 text-zinc-300">“Open my project in Cursor and create a new file.” Hold Space to talk or just type.</p>
+          </div>
+          <div className="rounded-lg border border-zinc-800 p-6">
+            <h3 className="font-semibold">2. Review the plan</h3>
+            <p className="mt-2 text-zinc-300">Commandrot proposes steps with a diff/summary. You stay in control.</p>
+          </div>
+          <div className="rounded-lg border border-zinc-800 p-6">
+            <h3 className="font-semibold">3. Approve and execute</h3>
+            <p className="mt-2 text-zinc-300">Click Approve to run. Click Reject or stop at any time.</p>
+          </div>
+        </section>
         <section className="mt-16 flex gap-3">
           <button onClick={handleOpenApp} className="inline-block rounded bg-white px-4 py-2 font-medium text-black hover:bg-zinc-200">Open Commandrot</button>
           <a href="https://github.com/creationaff/commandrot.com" className="inline-block rounded bg-zinc-800 px-4 py-2 font-medium text-white hover:bg-zinc-700">GitHub</a>
         </section>
-        <footer className="mt-8 text-center text-xs text-zinc-500">
+        <footer className="mt-16 text-center text-xs text-zinc-500">
           v0.1.1
         </footer>
       </div>
